@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page">
+      <div class="page__floater">
+        <img class="page__floater--logo" src="./img/L&D.png" alt="logo" />
+
+        <h2 class="page__floater--text">Panda Shop Feedback page</h2>
+      </div>
+
+      <section class="page__hero">
+        <h1 class="page__hero--title">Вітаємо!</h1>
+        <p class="page__hero--text">
+          Це сторінка відгуків нашого магазинчику, тут ви можете залишити відгук
+          про нашу роботу та запропонувати товар!
+        </p>
+      </section>
+      <hr
+        class="page__sectionDivider"
+        style="height: 2px; background-color: black; margin-top: 20px"
+        width="371"
+      />
+      <section>
+        <h2 class="page__section--title">Надішли нам свої побажання!</h2>
+        <form class="page__form" id="feedbackForm">
+          <h2 class="page__form--title">
+            Твоє ім'я та прізвище (необов'язково)
+          </h2>
+          <input
+            id="full_name"
+            type="text"
+            class="page__form--input"
+            placeholder="Відповідай тут"
+          />
+
+          <h2 class="page__form--title">
+            Яке твоє загальне враження <br />
+            від Panda Shop?
+          </h2>
+          <input
+            id="overall_impression"
+            type="text"
+            class="page__form--input"
+            placeholder="Відповідай тут"
+            required
+          />
+
+          <h2 class="page__form--title">
+            Які товари ти б хотів(ла) бачити у нас?
+          </h2>
+          <input
+            id="wanted_products"
+            type="text"
+            class="page__form--input"
+            placeholder="Відповідай тут"
+            required
+          />
+
+          <button type="submit" class="page__form--button">Відправити</button>
+        </form>
+
+        <p id="formMessage"></p>
+      </section>
+      <footer class="footer">
+        <img class="footer__logo" src="./img/L&D.png" alt="logo" />
+        <div class="footer__textwrap">
+          <h2 class="footer__ld">Learn & Dream school</h2>
+          <h2 class="footer__rights">© All rights reserved</h2>
+        </div>
+                  <h3 class="footer__made">Made by Damir Chaban</h3>
+      </footer>
+    </section>
+
+    <script src="env.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

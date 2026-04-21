@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <style>
+        body {
+            background-color: rgb(122, 226, 226);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Форма входу -->
+        <div id="loginForm" class="login-container">
+            <div class="login-card">
+                <h2 class="login-card--title">Ласкаво просимо!</h2>
+                <p class="login-card--text">Вхід для працівників Panda Shop</p>
+                <input class="login-card--input" type="email" id="adminEmail" placeholder="Email працівника" autocomplete="email">
+                <input class="login-card--input" type="password" id="adminPassword" placeholder="Пароль" autocomplete="current-password">
+                <button class="login-card--button" onclick="login()">Увійти</button>
+                <div id="loginError" class="error-message"></div>
+            </div>
+        </div>
+
+        <!-- Адмін панель (прихована спочатку) -->
+        <div id="adminPanel" class="admin-panel">
+            <div class="top-bar">
+                <a class="back-home" href="./index.html">← На головну</a>
+                <button class="logout-btn" onclick="logout()">Вийти</button>
+            </div>
+            
+            <h1 class="admin-title">🐼 Панель працівника</h1>
+            <p class="admin-subtitle">Управління відгуками клієнтів</p>
+            
+            <div class="feedback-section">
+                <h2>📝 Відгуки клієнтів</h2>
+                <div id="feedbackList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="env.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
