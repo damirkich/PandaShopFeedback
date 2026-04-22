@@ -280,3 +280,89 @@ $third-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
+
+
+
+.feedback-card {
+  background-color: white;
+  border: 3px solid #545050;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+  position: absolute;
+  left: 65%;
+  background-color: #e36a5c;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+
+  &:active {
+    background-color: darken(#e36a5c, 5%);
+    transform: translateY(2px);
+  }
+}
+
+
+
+.admin {
+
+  &-feedbackTitle {
+    font-family: $third-family;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+  }
+
+&-title {
+  font-family: $third-family;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 16px;
+}
+}
+
+.back-home {
+  font-family: $third-family;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  text-decoration: none;
+  margin-top: 20px;
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.logout-btn {
+  top: -10px;
+  right: 10px;
+  position: absolute;
+  font-family: $third-family;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  height: 40px;
+  width: 140px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 0.7px solid #000;
+
+  &:active {
+    text-decoration: underline;
+  }
+}
